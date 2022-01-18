@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Владислав Иванов](https://up.htmlacademy.ru/htmlcss/33/user/1971883).
-* Наставник: Анна Рус.
+* Наставник: [Анна Рус](https://htmlacademy.ru/profile/vanillawulf).
 
 ---
 
