@@ -1,0 +1,167 @@
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: italic;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: italic;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+/* Pages */
+
+.navigation-link {
+ font-size: 20px;
+ line-height: 26px;
+ font-weight: bold;
+ color: #000000;
+ text-decoration: none;
+}
+
+.title-logo {
+  background-image: url("../images/index-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.index-description {
+ font-weight: bold;
+ font-size: 30px;
+ line-height: 36px;
+}
+
+.introduction-reasons {
+  font-size: 22px;
+  line-height: 36px;
+}
+
+.reason-title {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.subreason-1, .subreason-7 {
+ color: #FFFFFF;
+ background-color: #83B3D3;
+}
+
+.subreason-3, .subreason-5, .subreason-8, .subreason-10 {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.subreason-9 {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.search-hotel {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.search-lead {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.subscribe {
+  background-image: url("../images/background-subscribe.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.subscribe-title {
+  color: #FFFFFF;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.subscribe-offer {
+  color: #FFFFFF;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.contacts-phone {
+  font-size: 40px;
+  line-height: 40px;
+  color:black;
+  text-decoration: none;
+}
+
+/* CATALOG */
+
+.catalog-filters {
+  background-image: url("../images/catalog-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+}
+
+.inner-header-title {
+  font-size: 60px;
+}
+
+.breadcrumbs {
+  font-size: 16px;
+}
+
+.hotel-card-link {
+  font-size: 24px;
+  line-height: 31px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.type-of-housing, .type-of-price {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.raiting {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.pagination-link {
+  font-size: 20px;
+  background-color: #83B3D3;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.pagination-current {
+  font-size: 20px;
+  background-color: #F2F2F2;
+  color: #000000;
+  text-decoration: none;
+}
