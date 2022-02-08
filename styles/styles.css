@@ -30,7 +30,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -58,6 +66,10 @@ body {
  font-weight: bold;
  font-size: 30px;
  line-height: 36px;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .introduction-reasons {
