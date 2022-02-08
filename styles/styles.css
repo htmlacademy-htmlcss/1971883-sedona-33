@@ -49,6 +49,8 @@ body {
 
 /* Pages */
 
+/* header */
+
 .navigation {
   display: flex;
   width: 1060px;
@@ -84,7 +86,9 @@ body {
   background-repeat: no-repeat;
 }
 
-.description {
+/* main */
+
+.description, .lead, .subscribe {
   margin: 0 auto;
   width: 720px;
   text-align: center;
@@ -168,11 +172,13 @@ body {
   line-height: 26px;
 }
 
-.subscribe {
+.subscribe-container {
   background-image: url("../images/background-subscribe.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
+
+/* footer */
 
 .subscribe-title {
   color: #FFFFFF;
@@ -184,6 +190,25 @@ body {
   color: #FFFFFF;
   font-size: 22px;
   line-height: 26px;
+}
+
+.contacts-container {
+  display: flex;
+}
+
+.footer-social {
+  margin-left: 72px;
+  width: 160px; /* +1 иконка */
+}
+
+.html-academy {
+  margin-right: 72px;
+  width: 155px;
+}
+
+.footer-contacts {
+  margin: 0 auto;
+  width: 720px;
 }
 
 .contacts-phone {
