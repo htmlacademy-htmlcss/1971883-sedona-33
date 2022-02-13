@@ -124,6 +124,7 @@ body {
 }
 
 .button {
+  font-family: inherit;
   font-weight: bold;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -443,53 +444,138 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   color: #FFFFFF;
+  padding: 35px 72px 83px 72px;
+  margin-bottom: 50px;
 }
 
 .inner-header-title {
   font-size: 60px;
-  margin-left: 71px;
+  line-height: 68px; /* высота блока по макету 68 px */
+  margin: 0;
+  padding: 0;
+  width: 528px;
 }
 
 .breadcrumbs {
   font-size: 16px;
   margin-left: 73px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 5px;
+  margin-bottom: 45px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.breadcrumbs-item {
+  margin-right: 10px;
+}
+
+.breadcrumbs-link {
+  color: #FFFFFF;
 }
 
 .catalog-filter {
   display: flex;
+  justify-content: space-between;
 }
 
 .infrastructure-group {
+  padding: 0;
+  margin: 0;
   width: 150px;
-  margin-left: 71px;
+  border: none;
 }
 
 .type-of-housing-group {
+  margin: 0;
+  padding: 0;
+  border: none;
   width: 144px;
-  margin-left: 68px;
 }
 
 .catalog-filter-buttons {
-  margin-right: 72px;
-  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .catalog-filter-title {
+  margin: 0;
+  padding: 0;
   font-size: 20px;
   font-weight: bold;
   line-height: 25px;
+  margin-bottom: 30px;
 }
 
-.control-input, .type-of-housing {
+.catalog-filter-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.control {
+  display: flex;
+}
+
+.control-input {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  margin-right: 19px;
+}
+
+.button-accept {
+  font-size: 16px;
+  line-height: 21px;
+  border-radius: 4px;
+  width: 160px;
+  padding: 12px;
+}
+
+.reset {
+  font: inherit;
   font-size: 18px;
   line-height: 23px;
+  background: none;
+  border: none;
+  color: #FFFFFF;
+  margin-top: 20px;
 }
 
 .sorting {
   display: flex;
   justify-content: space-between;
-  width: 1057px;
+  width: 1056px;
   margin: 0 auto;
+  margin-bottom: 53px;
+}
+
+.sorting-buttons {
+  width: 160px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sorting-buttons>.button {
+  width: 48px;
+  height: 48px;
+}
+
+.price-select {
+  font-size: 18px;
+  line-height: 23px;
 }
 
 .hotel-cards {
@@ -527,11 +613,57 @@ body {
   line-height: 21px;
 }
 
-.pagination-link {
+.show-more-container {
+  padding: 30px 0;
+  border-top: 1px solid #E6E6E6;
+  border-bottom: 1px solid #E6E6E6;
+
+}
+
+.show-more {
+  display: block;
   font-size: 20px;
+  line-height: 26px;
+  border-radius: 4px;
+  width: 620px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  width: 1058px;
+  margin: 30px auto;
+}
+
+.pagination-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.pagination-item {
+  width: 55px;
+  height: 55px;
+}
+
+.pagination-link {
+  border-radius: 4px;
+  padding: 14.5px;
+  display: block;
+  font-size: 20px;
+  line-height: 26px;
   background-color: #83B3D3;
   color: #FFFFFF;
   text-decoration: none;
+  text-align: center;
 }
 
 .pagination-current {
@@ -539,6 +671,16 @@ body {
   background-color: #F2F2F2;
   color: #000000;
   text-decoration: none;
+}
+
+.quanity-container {
+  display: flex;
+  justify-content: space-between;
+  width: 386px;
+}
+
+.hotels-on-page {
+  width: 160px;
 }
 
 .subscribe-title-catalog {
@@ -551,4 +693,45 @@ body {
   color: #000000;
   font-size: 22px;
   line-height: 26px;
+}
+
+.subscribe-catalog {
+
+  text-align: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.subscribe-title-catalog {
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  padding-bottom: 14px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.subscribe-offer-catalog {
+  font-size: 22px;
+  line-height: 26px;
+  margin: 0 auto 26px auto;
+  padding-bottom: 20px;
+  width: 500px;
+}
+
+.button-blue {
+  color: #FFFFFF;
+  background-color: #83B3D3;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.subscribe-button {
+  font-size: 20px;
+  line-height: 26px;
+  border-radius: 0 10px 10px 0;
+  width: 200px;
+  padding: 17px
 }
