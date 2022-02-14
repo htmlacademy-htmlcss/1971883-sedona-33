@@ -23,22 +23,22 @@
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
-            <a class="navigation-link " href="#">
+          <li class="navigation-user-item">
+            <a class="navigation-user-link" href="#">
               <span class="visually-hidden">
                 Поиск
               </span>
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
+          <li class="navigation-user-item">
+            <a class="navigation-user-link" href="#">
               <span class="visually-hidden">
                 Нравится
               </span>
             </a>
           </li>
-          <li class="navigation-item">
-            <input class="button" type="button" value="Хочу сюда!">
+          <li class="navigation-user-item">
+            <input class="button button-brown want" type="button" value="Хочу сюда!">
           </li>
         </ul>
       </nav>
@@ -65,20 +65,20 @@
             </div>
             <img class="subreason subreason-2 real-town" src="images/reason-1.jpg" width="800" height="384" alt="дом в Седоне">
             <div class="subreason subreason-3 real-town">
-              <img class="reason-icon-house" src="#" alt="">
+              <img class="reason-icon reason-icon-house" src="#" alt="">
               <h3 class="subreason-title">Жильё</h3>
               <p class="reason-text">Рекомендуем пожить
                 в настоящем мотеле, всё как в кино!
               </p>
             </div>
             <div class="subreason subreason-4 real-town">
-              <img class="reason-icon-burger" src="#" alt="">
+              <img class="reason-icon reason-icon-burger" src="#" alt="">
               <h3 class="subreason-title">Еда</h3>
               <p class="reason-text">Всегда заказывайте
                 топовый фирменный бургер, вы не разочаруетесь!</p>
             </div>
             <div class="subreason subreason-5 real-town">
-              <img class="reason-icon-gift" src="#" alt="">
+              <img class="reason-icon reason-icon-gift" src="#" alt="">
               <h3 class="subreason-title">Сувениры</h3>
               <p class="reason-text">Не только китайского,
                 но и настоящего местного производства!
@@ -94,12 +94,10 @@
             <img class="subreason subreason-6 devil-bridge" src="images/devil-bridge.jpg" width="800" height="384" alt="Мост дьявола">
           </li>
           <li class="reasons reason-3">
-            <div class="reason-3-container">
-              <div class="subreason subreason-8 small-area">
-                <h2 class="reason-title">Небольшая площадь</h2>
-                <p class="reason-number">— №3 —</p>
-                <p class="reason-text">Все достопримечательности находятся очень близко</p>
-              </div>
+            <div class="subreason subreason-8 small-area">
+              <h2 class="reason-title">Небольшая площадь</h2>
+              <p class="reason-number">— №3 —</p>
+              <p class="reason-text">Все достопримечательности находятся очень близко</p>
             </div>
           </li>
           <li class="reasons reason-4">
@@ -121,41 +119,39 @@
       <section class="lead">
         <h2 class="search-hotel">Заинтересовались?</h2>
         <p class="search-lead">Укажите предполагаемые даты поездки,
-          и мы покажем вам лучшие предложения гостиниц в Седоне
+и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <input class="button" type="button" value="ПОИСК ГОСТИНИЦЫ В седоне">
+        <input class="button button-brown search-hotel-button" type="button" value="ПОИСК ГОСТИНИЦЫ В седоне">
       </section>
-      <div class="subscribe-container">
-        <section class="subscribe">
-          <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-          <p class="subscribe-offer">Только полезная информация и никакого спама,
+        <section class="subscribe-index">
+          <h2 class="subscribe-index-title">Подпишитесь на рассылку</h2>
+          <p class="subscribe-index-offer">Только полезная информация и никакого спама,
           честное бойскаутское!</p>
-          <form action="#" method="post">
+          <form class="subscribe-index-form" action="#" method="post">
             <label for="email">Ваш e-mail</label>
             <input id="email" type="email" name="email">
-            <button type="submit">Подписаться</button>
+            <button class="button button-blue subscribe-button" type="submit">Подписаться</button>
           </form>
         </section>
-      </div>
     </main class="main-index">
     <footer class="page-footer">
       <div class="contacts-container">
         <section class="footer-social">
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="footer-social-list">
-            <li>
-              <a href="https://twitter.com/htmlacademy_ru">
-                <img class="socials" src="#" alt="Twitter">
+            <li class="footer-social-item">
+              <a class="button" href="#">
+                <span class="visually-hidden">Твиттер</span>
               </a>
             </li>
-            <li>
-              <a href="https://www.facebook.com/htmlacademy">
-                <img class="socials" src="#" alt="Facebook">
+            <li class="footer-social-item">
+              <a class="button" href="#">
+                <span class="visually-hidden">Фейсбук</span>
               </a>
             </li>
-            <li>
-              <a href="https://www.youtube.com/c/HTMLAcademyRUS">
-                <img class="socials" src="#" alt="Youtube">
+            <li class="footer-social-item">
+              <a class="button" href="#">
+                <span class="visually-hidden">Ютуб</span>
               </a>
             </li>
           </ul>
