@@ -445,6 +445,38 @@ body {
   width: 500px;
 }
 
+.subscribe-index-form {
+  display: flex;
+  justify-content: center;
+}
+
+.field {
+  width: 559px;
+  border-radius: 10px 0 0 10px;
+  border: none;
+  font-size: 18px;
+  line-height: 26px;
+  padding-left: 22px;
+  padding-right: 19px;
+}
+
+.field:hover {
+  background-color: #E6E6E6;
+}
+
+.field:focus {
+  outline: 3px solid #83B3D3;
+  background-color: #E6E6E6;
+}
+
+.field:invalid {
+  outline: 2px solid #FF5757;
+}
+
+.catalog-field {
+  background-color: #F2F2F2;
+}
+
 .button-blue {
   color: #FFFFFF;
   background-color: #83B3D3;
@@ -1086,7 +1118,7 @@ body {
 }
 
 .subscribe-catalog {
-
+  width: 800px;
   text-align: center;
   padding-top: 94px;
   padding-bottom: 94px;
