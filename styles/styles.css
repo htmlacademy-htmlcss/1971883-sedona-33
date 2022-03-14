@@ -540,7 +540,7 @@ body {
 }
 
 .dev {
-  padding: 12px;
+  padding: 16px 22.5px;
   margin-top: 30px;
   margin-bottom: 32px;
   display: block;
@@ -574,10 +574,10 @@ body {
 }
 
 .contacts-phone:focus {
-  padding: 12px;
   color: #756257;
   border: 3px solid #83B3D3;
   border-radius: 10px;
+  padding: 6px 12.5px;
 }
 
 .contacts-phone:active {
