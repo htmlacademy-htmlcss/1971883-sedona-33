@@ -72,21 +72,21 @@
                 <li class="catalog-filter-item">
                   <label class="control">
                   <input class="control-input visually-hidden" type="checkbox" name="swimming-pool" checked>
-                  <span class="control-mark"></span>
+                  <span class="control-mark mark-check"></span>
                   <span class="control-label">Бассейн</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
                   <input class="control-input visually-hidden" type="checkbox" name="parking" checked>
-                  <span class="control-mark"></span>
+                  <span class="control-mark mark-check"></span>
                   <span class="control-label">Парковка</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
                   <input class="control-input visually-hidden" type="checkbox" name="wi-fi">
-                  <span class="control-mark"></span>
+                  <span class="control-mark mark-check"></span>
                   <span class="control-label">Wi-Fi</span>
                   </label>
                 </li>
@@ -151,11 +151,13 @@
       </section>
       <section class="sorting">
         <p class="number-of-hotels">Найдено гостиниц: 38</p>
-        <select class="price-select">
-          <option class="value-price" value="cheap">Сначала дешёвые</option>
-          <option class="value-price" value="popular">Сначала популярные</option>
-          <option class="value-price" value="expensive">Сначала дорогие</option>
-        </select>
+        <div class="select sorting-type">
+          <select class="select-control" aria-label="Сортировка">
+            <option class="value-price" value="cheap">Сначала дешёвые</option>
+            <option class="value-price" value="popular">Сначала популярные</option>
+            <option class="value-price" value="expensive">Сначала дорогие</option>
+          </select>
+        </div>
         <div class="sorting-buttons">
           <a href="#" class="sorting-button sorting-tile sorting-current">
             <svg class ="sorting-logo" aria-hidden="true" focusable="false" width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" fill="#000"/></svg>
@@ -282,9 +284,9 @@
             <a class="button-blue pagination-link" href="#">10</a>
           </li>
         </ul>
-        <div class="quanity-container">
-          <p class="quantity-of-hotels">Гостиниц на странице:</p>
-          <select class="hotels-on-page">
+        <p class="quantity-of-hotels">Гостиниц на странице:</p>
+        <div class="select sorting-type  hotels-on-page">
+          <select class="select-control">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
