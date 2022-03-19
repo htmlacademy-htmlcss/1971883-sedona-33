@@ -788,7 +788,7 @@ body {
 
 .range-input {
   position: absolute;
-  width: 105.5px;
+  width: 106.5px;
   font-size: 18px;
   line-height: 23px;
   color: inherit;
@@ -873,7 +873,7 @@ input[type=number]::-webkit-outer-spin-button {
   line-height: 21px;
   border-radius: 4px;
   width: 160px;
-  padding: 12px;
+  padding: 13.5px 12px;
 }
 
 .button-accept:hover {
@@ -900,15 +900,49 @@ input[type=number]::-webkit-outer-spin-button {
   background: none;
   border: none;
   color: #FFFFFF;
-  margin-top: 20px;
+  margin-top: 22px;
+}
+
+.control:hover .mark-check {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.control-input[type="checkbox"]:focus + .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+  outline: 3px solid #83B3D3;
+}
+
+.control-input[type="checkbox"]:active + .control-mark {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.control-input[type="checkbox"]:checked + .control-mark {
+  background-image: url(../images/tick.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.control-input[type="radio"]:checked + .control-mark {
+  background-image: url(../images/Ellipse-radio.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.control-input[type="radio"]:focus + .control-mark {
+  outline: 3px solid #83B3D3;
 }
 
 .control-mark {
+  display: block;
   width: 20px;
   height: 20px;
   background-color: #FFFFFF;
   border-radius: 4px;
   margin-right: 19px;
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
 }
 
 .reset:hover {
@@ -976,13 +1010,43 @@ input[type=number]::-webkit-outer-spin-button {
 
 }
 
-.price-select {
+.select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 287px;
+}
+
+.select-control:hover {
+  border-color: #83B3D3;
+}
+
+.select-control:focus {
+  border-color: #83B3D3;
+  outline: none;
+}
+
+.select-control:active {
+  opacity: 0.3;
+  border-color: #E6E6E6;
+}
+
+
+.select-control {
   font-size: 18px;
   line-height: 23px;
+  width: 100%;
+  padding-right: 45px;
+  padding-left: 17px;
+  padding-top: 10.5px;
+  padding-bottom: 10.5px;
   border: 2px solid #E6E6E6;
   border-radius: 4px;
-  padding-left: 17px;
-  padding-right: 19px;
+  background-color: #ffffff;
+  background-image: url(../images/select-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right 21px center;
+  appearance: none;
 }
 
 .hotel-cards {
@@ -1123,9 +1187,6 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0;
 }
 
-.price-select {
-  width: 287px;
-}
 
 .hotel-card-link {
   font-size: 24px;
@@ -1154,10 +1215,11 @@ input[type=number]::-webkit-outer-spin-button {
 
 
 .show-more-container {
+  width: 1056px;
   padding: 30px 0;
   border-top: 1px solid #E6E6E6;
   border-bottom: 1px solid #E6E6E6;
-
+  margin: auto;
 }
 
 .show-more {
@@ -1172,15 +1234,16 @@ input[type=number]::-webkit-outer-spin-button {
 
 .pagination {
   display: flex;
-  justify-content: space-between;
   width: 1058px;
   margin: 30px auto;
+  align-content: center;
 }
 
 .pagination-list {
   display: flex;
   list-style-type: none;
   margin: 0;
+  margin-right: 299px;
   padding: 0;
 }
 
@@ -1215,14 +1278,16 @@ input[type=number]::-webkit-outer-spin-button {
   text-decoration: none;
 }
 
-.quanity-container {
-  display: flex;
-  justify-content: space-between;
-  width: 386px;
-}
 
 .hotels-on-page {
   width: 160px;
+  margin-left: 51px;
+}
+
+.quantity-of-hotels {
+  margin: 0;
+  width: 180px;
+  align-self: center;
 }
 
 .subscribe-title-catalog {
@@ -1277,5 +1342,273 @@ input[type=number]::-webkit-outer-spin-button {
   width: 200px;
   padding: 17px
 }
+
+/* Модальное окно */
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 62px 70px 70px 70px;
+  background-color: #ffffff;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: bold;
+  border-radius: 30px;
+}
+
+.modal-search {
+  width: 575px;
+}
+
+
+.modal-content {
+  margin: 0;
+  margin-right: 0;
+  padding: 0;
+}
+
+.modal-close-button {
+  background-color: #F2F2F2;
+  background-image: url(../images/modal-close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  border-radius: 50%;
+  width: 53px;
+  height: 53px;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  right: 70px;
+  top: 54px;
+}
+
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.modal-close-button:active {
+  opacity: 0.3;
+}
+
+.modal-title {
+  width: 499px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 59px;
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+.first-date-container, .last-date-container, .parents-container, .child-container {
+  display: flex;
+}
+
+.first-date-container, .last-date-container {
+  margin-bottom: 11px;
+}
+
+
+
+.child-quanity-container, .parents-quanity-container  {
+  display: flex;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+}
+
+.quanity-containers {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.tooltip-toggle {
+  border: none;
+  width: 25px;
+  height: 25px;
+  background-color: #83B3D3;
+  border-radius: 50%;
+}
+
+.tooltip-toggle:hover {
+  background-color: #68A2CA;
+}
+
+.tooltip-text {
+  position: absolute;
+  background-color: #333333;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+  text-transform: none;
+  padding: 15px 20px 18px 20px;
+  width: 216px;
+  right: 106px;
+  bottom: 33px;
+  display: none;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
+.tooltip-text::after {
+  content:'';
+  background-image: url(../images/triangle-tooltip.svg);
+  width: 19px;
+  height: 9px;
+  position: absolute;
+  bottom: 100%;
+  right: 119px;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  align-self: start;
+  margin: 0;
+  padding: 5px 0;
+  width: 155px;
+}
+
+.form-label:not(.child) {
+  width: 155px;
+}
+
+.submit-modal-button {
+  width: 575px;
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 0;
+}
+
+.submit-modal-button:active {
+  background-color: #68A2CA;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.modal-field {
+  width: 401px;
+  border: none;
+  padding: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font: inherit;
+  border-radius: 4px;
+  background-color: #F2F2F2;
+  padding-left: 19px;
+  background-image: url(../images/date-modal-input.svg);
+  background-repeat: no-repeat;
+  background-position: right 19px center;
+}
+
+.modal-field:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-field:focus {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
+.modal-field:active {
+  border: 2px solid #000000;
+  background-color: #FFFFFF;
+  outline: none;
+}
+
+.input-date-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.date-description {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 29px;
+}
+
+.invalid-date {
+  color: #FF5757;
+}
+
+.parents-container {
+  width: 288px;
+}
+
+
+.child-container {
+  width: 230px;
+  justify-content: space-between;
+}
+
+.child {
+  display: flex;
+  justify-content: space-between;
+  width: 79px;
+}
+
+.modal-quanity {
+  width: 41px;
+  background-color: #F2F2F2;
+  border: none;
+  text-align: center;
+  padding: 0;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+.button-minus, .button-plus {
+  width: 41px;
+  border: none;
+  background-color: #F2F2F2;
+}
+
+.button-minus {
+  border-radius: 4px 0 0 4px;
+  background-image: url(../images/button-minus.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button-plus {
+  border-radius: 0 4px 4px 0;
+  background-image: url(../images/button-plus.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modal-container-close {
+  display: none;
+}
+
 
 
