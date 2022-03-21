@@ -1566,9 +1566,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .modal-field:active {
-  border: 2px solid #000000;
+  outline: 2px solid #000000;
   background-color: #FFFFFF;
-  outline: none;
 }
 
 .input-date-container {
