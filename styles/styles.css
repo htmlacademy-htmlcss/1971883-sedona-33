@@ -342,11 +342,11 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  width: 170px; /* подбор ширины под корректный перенос*/
+  width: 170px;
 }
 
 .subreason-7> .reason-title {
-  width: 172px; /* подбор ширины под корректный перенос*/
+  width: 172px;
 }
 
 .reason-title {
@@ -363,6 +363,8 @@ body {
 }
 
 .reason-text {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   width: 250px;
 }
@@ -380,7 +382,7 @@ body {
  background-color: #83B3D3;
 }
 
-.subreason-2, subreason-6 {
+.subreason-2, .subreason-6 {
   display: block;
 }
 
