@@ -512,20 +512,18 @@ body {
 }
 
 .footer-social {
-  margin-left: 54px;
-  width: 128px;
+  margin-left: 64px;
+  width: 174px;
 }
 
 .footer-social-list {
   margin: 0;
-  margin-top: 39px;
-  margin-bottom: 44px;
   padding: 0;
+  margin-top: 40.5px;
   list-style-type: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 
@@ -539,6 +537,8 @@ body {
   fill: #68A2CA;
   width: 34px;
   height: 34px;
+  margin-right: 9px;
+  margin-bottom: 9px;
 }
 
 .social-icon {
@@ -571,11 +571,11 @@ body {
 }
 
 .dev {
+  margin-left: 30.5px;
   padding: 13px 22.5px;
   margin-top: 30px;
   margin-bottom: 32px;
   display: block;
-  margin-left: auto;
   width: 115px;
 }
 
@@ -585,15 +585,15 @@ body {
 }
 
 .footer-contacts {
-  padding-top: 40px;
-  padding-bottom: 30px;
-  margin: 0 auto;
-  width: 720px;
+  margin: 0;
   text-align: center;
 }
 
 .contacts-phone {
+  display: block;
+  width: 720px;
   margin: 0 auto;
+  padding-top: 40px;
   font-size: 40px;
   line-height: 40px;
   color:black;
