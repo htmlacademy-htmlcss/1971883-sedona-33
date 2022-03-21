@@ -59,7 +59,6 @@
             <li class="breadcrumbs-item">
               <svg class="breadcrumbs-logo" aria-hidden="true" focusable="false" width="5" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity=".3" clip-path="url(#a)"><path d="M4.8 3.6 1 .2C.8 0 .4 0 .1.2-.2.4-.1.8.1 1l3.3 3L.2 7c-.2.2-.2.6 0 .8 0 .1.3.2.4.2.1 0 .3-.1.4-.2l3.8-3.4c.3-.2.3-.6 0-.8Z" fill="#fff"/></g><defs><clipPath><path fill="#fff" d="M0 0h5v8H0z"/></clipPath></defs></svg>
             </li>
-            </li>
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="catalog.html">Гостиницы</a>
             </li>
@@ -123,11 +122,11 @@
               <div class="range-wrapper-inputs">
                 <label class="catalog-filter-label">
                   <span class="input-placeholder">от</span>
-                  <input class="range-input min-price-input type="number" value="0" name="min-price">
+                  <input class="range-input min-price-input" type="number" value="0" name="min-price">
                 </label>
                 <label class="catalog-filter-label">
                   <span class="input-placeholder">до</span>
-                  <input class="range-input type="number" value="9000" name="max-price">
+                  <input class="range-input" type="number" value="9000" name="max-price">
                 </label>
               </div>
               <div class="range">
@@ -141,6 +140,7 @@
                     </button>
                   </div>
                 </div>
+              </div>
             </fieldset>
             <div class="catalog-filter-buttons">
               <button class="button button-blue button-accept" type="submit">Применить</button>
@@ -150,6 +150,7 @@
         </div>
       </section>
       <section class="sorting">
+        <h2 class="visually-hidden">Сортировка гостиниц по цене</h2>
         <p class="number-of-hotels">Найдено гостиниц: 38</p>
         <div class="select sorting-type">
           <select class="select-control" aria-label="Сортировка">
@@ -261,6 +262,7 @@
           <button class="button button-blue show-more" type="button">Загрузить ещё</button>
       </div>
       <section class="pagination">
+        <h2 class="visually-hidden">Выбор страницы каталога</h2>
         <ul class="pagination-list">
           <li class="pagination-item">
             <a class="pagination-link pagination-current">1</a>
