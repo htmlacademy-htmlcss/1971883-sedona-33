@@ -1549,7 +1549,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .modal-field {
-  width: 401px;
+  width: 348px;
   border: none;
   padding: 0;
   padding-top: 5px;
@@ -1558,6 +1558,7 @@ input[type=number]::-webkit-outer-spin-button {
   border-radius: 4px;
   background-color: #F2F2F2;
   padding-left: 19px;
+  padding-right: 53px;
   background-image: url(../images/date-modal-input.svg);
   background-repeat: no-repeat;
   background-position: right 19px center;
