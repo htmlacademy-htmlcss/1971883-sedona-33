@@ -101,7 +101,7 @@ body {
 
 .navigation-user {
   padding: 0;
-  max-width: 306px; /* размер с +1 иконкой*/
+  max-width: 306px;
   max-height: 66px;
   margin-left: auto;
   display: flex;
@@ -1613,7 +1613,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .modal-quanity {
-  width: 41px;
+  width: 33px;
   background-color: #F2F2F2;
   border: none;
   text-align: center;
@@ -1624,27 +1624,54 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .button-minus, .button-plus {
-  width: 41px;
+  position: relative;
+  display: block;
+  margin: auto;
+  padding: 0;
   border: none;
   background-color: #F2F2F2;
+  width: 19px;
+  padding-top: 9.5px;
+  padding-bottom: 9.5px;
 }
 
-.button-minus {
-  border-radius: 4px 0 0 4px;
-  background-image: url(../images/button-minus.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.button-plus {
-  border-radius: 0 4px 4px 0;
-  background-image: url(../images/button-plus.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
 
 .modal-container-close {
   display: none;
+}
+
+.button-minus-icon, .button-plus-icon {
+  position: absolute;
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+.button-minus-container, .button-plus-container {
+  width: 50px;
+  padding-top: 15.5px;
+}
+
+.button-minus-icon, .button-plus-icon {
+  top: 3px;
+  left: 3px;
+}
+
+.button-minus-icon:hover, .button-plus-icon:hover {
+  fill: #000000;
+}
+
+.button-minus:focus, .button-plus:focus {
+  outline: solid 3px #83B3D3;
+  border-radius: 4px;
+}
+
+.button-minus:focus .button-minus-icon,
+.button-plus:focus .button-plus-icon {
+  fill: #000000;
+}
+
+.button-minus:active .button-minus-icon,
+.button-plus:active .button-plus-icon {
+  fill: rgba(0, 0, 0, 0.2);
 }
 
 
