@@ -101,7 +101,7 @@ body {
 
 .navigation-user {
   padding: 0;
-  max-width: 306px; /* размер с +1 иконкой*/
+  max-width: 306px;
   max-height: 66px;
   margin-left: auto;
   display: flex;
@@ -206,12 +206,14 @@ body {
 
 .title-logo {
   background-image: url("../images/index-background.jpg");
+  background-color: #000000;
   background-size: 100% auto;
   background-repeat: no-repeat;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .button {
+  text-decoration: none;
   font-family: inherit;
   font-weight: bold;
   text-transform: uppercase;
@@ -329,21 +331,28 @@ body {
 }
 
 .subreason-3, .subreason-4, .subreason-5 {
-  padding-top: 84px;
+  padding-top: 184px;
   padding-bottom: 89px;
 }
 
-.reason-icon {
-  margin-bottom: 23px;
+.subreason-3 {
+  background-image: url(../images/icon-house.svg);
+  background-repeat: no-repeat;
+  background-position: center 89px;
 }
 
-.subreason-3 > .reason-icon {
-  margin-top: 5px;
+.subreason-4 {
+  background-image: url(../images/icon-burger.svg);
+  background-repeat: no-repeat;
+  background-position: center 91px;
 }
 
-.subreason-4 > .reason-icon {
-  margin-top: 7px;
+.subreason-5 {
+  background-image: url(../images/icon-present.svg);
+  background-repeat: no-repeat;
+  background-position: center 85px;
 }
+
 
 .reason-title, .subreason-title {
   font-size: 24px;
@@ -439,6 +448,7 @@ body {
 
 .subscribe-index {
   background-image: url("../images/background-subscribe.jpg");
+  background-color: #000000;
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: center;
@@ -668,6 +678,7 @@ body {
 .catalog-filters {
   background-image: url("../images/catalog-background.jpg");
   background-size: 100% auto;
+  background-color: #000000;
   background-repeat: no-repeat;
   color: #FFFFFF;
   padding: 38px 72px 83px 67px;
@@ -1549,7 +1560,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .modal-field {
-  width: 401px;
+  width: 348px;
   border: none;
   padding: 0;
   padding-top: 5px;
@@ -1558,6 +1569,7 @@ input[type=number]::-webkit-outer-spin-button {
   border-radius: 4px;
   background-color: #F2F2F2;
   padding-left: 19px;
+  padding-right: 53px;
   background-image: url(../images/date-modal-input.svg);
   background-repeat: no-repeat;
   background-position: right 19px center;
@@ -1611,7 +1623,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .modal-quanity {
-  width: 41px;
+  width: 33px;
   background-color: #F2F2F2;
   border: none;
   text-align: center;
@@ -1622,27 +1634,54 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .button-minus, .button-plus {
-  width: 41px;
+  position: relative;
+  display: block;
+  margin: auto;
+  padding: 0;
   border: none;
   background-color: #F2F2F2;
+  width: 19px;
+  padding-top: 9.5px;
+  padding-bottom: 9.5px;
 }
 
-.button-minus {
-  border-radius: 4px 0 0 4px;
-  background-image: url(../images/button-minus.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.button-plus {
-  border-radius: 0 4px 4px 0;
-  background-image: url(../images/button-plus.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
 
 .modal-container-close {
   display: none;
+}
+
+.button-minus-icon, .button-plus-icon {
+  position: absolute;
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+.button-minus-container, .button-plus-container {
+  width: 50px;
+  padding-top: 15.5px;
+}
+
+.button-minus-icon, .button-plus-icon {
+  top: 3px;
+  left: 3px;
+}
+
+.button-minus-icon:hover, .button-plus-icon:hover {
+  fill: #000000;
+}
+
+.button-minus:focus, .button-plus:focus {
+  outline: solid 3px #83B3D3;
+  border-radius: 4px;
+}
+
+.button-minus:focus .button-minus-icon,
+.button-plus:focus .button-plus-icon {
+  fill: #000000;
+}
+
+.button-minus:active .button-minus-icon,
+.button-plus:active .button-plus-icon {
+  fill: rgba(0, 0, 0, 0.2);
 }
 
 
