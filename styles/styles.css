@@ -331,8 +331,10 @@ body {
 }
 
 .subreason-3, .subreason-4, .subreason-5 {
+  display: block;
   padding-top: 184px;
-  padding-bottom: 89px;
+  padding-bottom: 68px;
+  white-space: pre;
 }
 
 .subreason-3 {
