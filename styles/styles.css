@@ -330,21 +330,28 @@ body {
 }
 
 .subreason-3, .subreason-4, .subreason-5 {
-  padding-top: 84px;
+  padding-top: 184px;
   padding-bottom: 89px;
 }
 
-.reason-icon {
-  margin-bottom: 23px;
+.subreason-3 {
+  background-image: url(../images/icon-house.svg);
+  background-repeat: no-repeat;
+  background-position: center 89px;
 }
 
-.subreason-3 > .reason-icon {
-  margin-top: 5px;
+.subreason-4 {
+  background-image: url(../images/icon-burger.svg);
+  background-repeat: no-repeat;
+  background-position: center 91px;
 }
 
-.subreason-4 > .reason-icon {
-  margin-top: 7px;
+.subreason-5 {
+  background-image: url(../images/icon-present.svg);
+  background-repeat: no-repeat;
+  background-position: center 85px;
 }
+
 
 .reason-title, .subreason-title {
   font-size: 24px;
