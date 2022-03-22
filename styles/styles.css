@@ -668,6 +668,7 @@ body {
 .catalog-filters {
   background-image: url("../images/catalog-background.jpg");
   background-size: 100% auto;
+  background-color: #333333;
   background-repeat: no-repeat;
   color: #FFFFFF;
   padding: 38px 72px 83px 67px;
